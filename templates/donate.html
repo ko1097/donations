@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body class="donate-grid">
+    <div class="main_top">
+        <div class="main_top-heading">
+          <h2 class="main_top-heading-2">child<span class="h2color">care</span></h2>
+          
+        </div>
+        
+        <nav class="main_top-nav">
+            <ul class="main-top-nav-1"> 
+                <li class="main_top-nav-1_item"> <a href="{% url 'home' %}" class="main_top-nav-1_link">Home</a> </li>
+                <li class="main_top-nav-1_item"> <a href="" class="main_top-nav-1_link">about us</a> </li>
+                <li class="main_top-nav-1_item"> <a href="{% url 'second' %}" class="main_top-nav-1_link">Donate us</a> </li>
+                
+            </ul>
+        </nav> 
+    </div>
+    <div class="middle">
+        <div class="short">
+            <h3 class="short_heading">Please come forward and contribute. Your contribution will transform lives.</h3>
+            <ul class="short_para-ul">
+                <li class="short_para-ul-list">Save the Children has changed the lives of more than 1.1 crore (10.1 million) children in India, since 2008.</li>
+                <li class="short_para-ul-list">We get deprived children access to quality education and often life – saving healthcare, and protection from harm and abuse.</li>
+                <li class="short_para-ul-list">Currently, we have 65 projects running in 18 states of India.</li>
+                <li class="short_para-ul-list">In 2019, we reached a total of 12.64 lakh children.</li>
+                <li class="short_para-ul-list">In 2020, we reached a total of 24.89 lakh children.</li>
+
+            </ul>         
+              
+               
+            <button class="btn"> <a href="{% url 'pay' %}" > <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H79UJRkF4ytl2X" async> </script> </form></a> </button>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h5> Child care</h5>
+        <p class="footer_para">this page was created by koushik r for sprak foundations intern-ship task <a href="">@copyright</a> every desgin self made by me for creating website for your company and for other deatils Email:koushikramachandran1997@gmail.com </p>
+    </div>
+    
+</body>
+</html>

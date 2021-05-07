@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Payment Gateway</title>
+</head>
+<body>
+	<form action="https://www.example.com/payment/success/" method="POST">
+
+		{% csrf_token %}
+		<label id ='names'for="">Name:</label>
+		<input id = 'names'type="text" name="name">
+		<label id="amt">amount:</label>
+		<input type="text" name="amount">
+		<script
+			src="https://checkout.razorpay.com/v1/checkout.js"
+			
+		></script>
+		<!-- <form> -->
+			<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H79UJRkF4ytl2X" async> </script> </form>
+            <!-- <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H16yG6wBRy7QRE"
+              async> </script>
+          </form> -->
+		<!-- <input type="hidden" custom="Hidden Element" name="hidden">
+		</form> -->
+</body>
+</html>
+<!-- data-key="rzp_test_kE3jMsxyS0zoAa" 
+			data-amount="{{amt}}*10000" 
+			data-currency="INR"
+			data-order_id="{{payment.id}}"
+			data-buttontext="Pay"
+			data-name="professional Cipher"
+			data-description="Django and data science"
+			data-image="https://example.com/your_logo.jpg"
+			data-prefill.name="{{names}}"
+			data-prefill.email="koushikramachandran1997@gmail.com"
+			data-theme.color="#F37254" -->

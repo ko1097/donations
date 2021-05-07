@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildCARE</title>
+     <link rel="stylesheet" href="{% static 'style.css'  %}">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <div class="social"> 
+         <nav class="social_nav">
+            <ul class="social_nav-1">
+                <li class="social_nav-1_item"> <a href="" class="social_nav-1_item_link">facebook </a></li>
+                <li class="social_nav-1_item"> <a href="" class="social_nav-1_item_link">Instagram</a></li>
+                <li class="social_nav-1_item"> <a href="" class="social_nav-1_item_link">Twitter </a></li>
+                <li class="social_nav-1_item"> <a href="" class="social_nav-1_item_link">Youtube </a></li>
+        </nav>
+                            
+                   
+    </div>
+    <div class="side-heading">
+        <p class="side-heading_1"></p>
+    </div>
+    <div class="main">
+        <div class="main_top">
+            <div class="main_top-heading">
+              <h2 class="main_top-heading-2">child<span class="h2color">care</span></h2>
+              
+            </div>
+            
+            <nav class="main_top-nav">
+                <ul class="main-top-nav-1"> 
+                    <li class="main_top-nav-1_item"> <a href="{% url 'home' %}" class="main_top-nav-1_link">Home</a> </li>
+                    <li class="main_top-nav-1_item"> <a href="" class="main_top-nav-1_link">about us</a> </li>
+                    <li class="main_top-nav-1_item"> <a href="{% url 'second' %}" class="main_top-nav-1_link">Donate us</a> </li>
+                    
+                </ul>
+            </nav> 
+        </div>
+        <div class="main_middle">
+            <h1>child</h1>
+            <h4>care...</h4>
+            
+        </div>
+        <div class="main_end">
+            <div class="main_end-name">
+                <h3 class="heading-3">mission</h3>
+
+            </div>
+            <div class="main_end-content">
+                <p class="main_end-content-para">
+                    The main objective of Child Care is to improve the lives of poor children, their families and communities through an approach that puts children at the center of community development.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h5> Child care</h5>
+        <p class="footer_para">this page was created by koushik r for sprak foundations intern-ship task <a href="">@copyright</a> every desgin self made by me for creating website for your company and for other deatils Email:koushikramachandran1997@gmail.com </p>
+    </div>
+</body>
+</html>
